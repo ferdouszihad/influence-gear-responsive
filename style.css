@@ -1,0 +1,337 @@
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+/* Header Section */
+
+header {
+  margin-top: 50px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-nav {
+  display: flex;
+  justify-content: center;
+}
+.mobile-nav i {
+  display: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul a {
+  text-decoration: none;
+  padding: 34px;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+.section-title {
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Banner Section */
+.banner {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-top: 80px;
+  gap: 150px;
+}
+.banner-title,
+.feature-title {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.banner-discription,
+.feature-description {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.btn-primary {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 41px;
+  border: none;
+  background: #e02c6d;
+  width: 150px;
+  height: 30px;
+  padding: 10px 24px;
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+}
+.banner-img {
+  /* border: 3px solid red; */
+  background-image: url("images/background.svg");
+  background-repeat: no-repeat;
+}
+/* Main Section */
+
+main {
+  margin: 100px 165px 100px 165px;
+}
+
+/* Logo Section Starts */
+.logo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.logo img {
+  width: auto;
+}
+
+/* Popular Collection */
+
+.popular-title {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.popular {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+  margin-left: 55px;
+}
+.card {
+  /* set a responsive width to the card  */
+  width: 100%;
+  /* set a responsive width to the card  */
+  max-width: 329px;
+  height: 476px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  /* add padding instead of giving padding individual childrens  */
+  padding: 2%;
+}
+.card img {
+  /* delete unwanted padding from card  */
+
+  width: 100%;
+}
+.card-contant {
+  /* delete unwanted padding of childrens see 121 line . thats the place where we have to put padding */
+  text-align: left;
+}
+.card-title {
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0px;
+}
+.card-discription {
+  color: #787885;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* Button CSS was wrong watch this */
+#seemore {
+  text-align: right;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  border: 0;
+  background-color: #fff;
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Feature Section Start */
+.feature-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 95px;
+  margin-top: 125px;
+  align-items: center;
+}
+#btn {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 0px;
+  padding: 15px 24px;
+  font-size: 16px;
+  gap: 8px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #0a0826;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+.footer-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.copyright {
+  color: #d9dbe1;
+  font-size: 10px;
+  font-weight: 700;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Mobile Screen Style */
+@media screen and (max-width: 576px) {
+  main {
+    /* delete unwanted padding from main . add a responsive padding */
+    margin: 2vw;
+  }
+  header {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  nav ul {
+    display: none;
+
+    padding: 0;
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(2,1fr); */
+    /* grid-template-rows: repeat(2,1fr); */
+  }
+
+  .mobile-nav {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .mobile-nav i {
+    display: initial;
+    font-size: 22px;
+  }
+
+  .banner {
+    /* reduce padding for beutify section*/
+    padding-top: 50px;
+  }
+
+  nav,
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner {
+    /* setting margin to beautify the section */
+    margin: 2vw;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  .banner-contant,
+  .feature-section {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .banner-img,
+  .feature-img {
+    width: auto;
+  }
+  .banner-img {
+    /* positioning background to place itt in center */
+    background-position: center;
+  }
+  /* css for making our font responsive Start*/
+  .banner-title,
+  .feature-title {
+    font-size: 2rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .feature-description {
+    text-align: justify;
+    font-size: 1rem;
+  }
+  /* css for making our font responsive End */
+
+  /* making all the images responsive */
+  .banner-img img,
+  .feature-img img {
+    /* reducing img width */
+    width: 90%;
+    /* margin: 51px 33px 16px 22px; */
+    /* replacing margin with auto */
+    margin: auto;
+  }
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .banner-discription {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  nav ul a {
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  #seemore {
+    margin-left: 0px;
+  }
+  .logo {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+  }
+  .logo img {
+    max-width: 300px;
+    width: 100%;
+  }
+  .popular {
+    /* delete unwanted margins in mobile device */
+    margin: 0 auto;
+    justify-content: center;
+    gap: 15px;
+  }
+  .feature-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
