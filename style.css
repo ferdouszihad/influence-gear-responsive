@@ -120,13 +120,13 @@ main {
   /* set a responsive width to the card  */
   width: 100%;
   /* set a responsive width to the card  */
-  max-width: 329px;
+  max-width: 300px;
   height: 476px;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
   /* add padding instead of giving padding individual childrens  */
-  padding: 2%;
+  padding: 10px;
 }
 .card img {
   /* delete unwanted padding from card  */
